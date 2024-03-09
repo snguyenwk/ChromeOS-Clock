@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Clock</title>
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="./node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./clock/clock-view.js"></script>
+    <script type="module" src="./clock/clock-selector.js"></script>
+    <script type="module" src="./stopwatch/stopwatch-view.js"></script>
+    <script type="module" src="./timer/timer-view.js"></script>
+    <script type="module" src="./alarm/alarm-view.js"></script>
+    <script type="module" src="./alarm/alarm-selector.js"></script>
+    <script type="module" src="./options/options.js"></script>
+  </head>
+  
+  <style>
+    html, body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0px;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      /* background-color: ; */
+    }
+  </style>
+  
+  <body>
+    
+    <stopwatch-view></stopwatch-view>
+    <div id="array-wrapper" style="width: 100%;">
+      <div id="clock-view"><clock-view></clock-view></div>
+      <div id="timer-view"><timer-view></timer-view></div>
+      <div id="alarm-view"><alarm-view></alarm-view></div>
+      <div id="optns-view"><options-card></options-card></div>
+    </div>
+  </body>
+  
+  </html>

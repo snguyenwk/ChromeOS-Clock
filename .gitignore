@@ -1,0 +1,21 @@
+/node_modules/
+/lib/
+/test/
+custom-elements.json
+# top level source
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+# only generated for size check
+my-element.bundled.js
+
+# Ignore build files
+
+/clock/
+/alarm/
+/timer/
+/stopwatch/
+/placeholder/
+/helper/
+/app-container.*
